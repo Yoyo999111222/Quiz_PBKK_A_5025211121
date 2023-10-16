@@ -239,5 +239,7 @@ namespace PhotoLab
                 }
             }
         }
+        private void DeleteSelectedImage() =>
+            Images.Remove(ImageGridView.SelectedItem as ImageFileInfo);
     }
 }
